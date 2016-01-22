@@ -4,7 +4,7 @@
 	<title>Monopoly</title>
 	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script type="text/javascript" src="classicedition.js"></script>
+	<script type="text/javascript" src="medievaledition.js"></script>
 	<!-- Comment out the previous line and uncomment the next one to enable the New York City Edition -->
 	<!-- <script type="text/javascript" src="newyorkcityedition.js"></script> -->
 	<script type="text/javascript" src="ai.js"></script>
@@ -54,12 +54,12 @@
 			<table id="deed-table">
 				<tr>
 					<td colspan="2">
-						RENT&nbsp;$<span id="deed-baserent">12</span>.
+						RENT&nbsp;SQUARE FEET<span id="deed-baserent">12</span>.
 					</td>
 				</tr>
 				<tr>
 					<td style="text-align: left;">With 1 House</td>
-					<td style="text-align: right;">$&nbsp;&nbsp;&nbsp;<span id="deed-rent1">60</span>.</td>
+					<td style="text-align: right;">SQUARE FEET&nbsp;&nbsp;&nbsp;<span id="deed-rent1">60</span>.</td>
 				</tr>
 				<tr>
 					<td style="text-align: left;">With 2 Houses</td>
@@ -75,10 +75,10 @@
 				</tr>
 				<tr>
 					<td colspan="2">
-						<div style="margin-bottom: 8px;">With HOTEL $<span id="deed-rent5">900</span>.</div>
-						<div>Mortgage Value $<span id="deed-mortgage">80</span>.</div>
-						<div>Houses cost $<span id="deed-houseprice">100</span>. each</div>
-						<div>Hotels, $<span id="deed-hotelprice">100</span>. plus 4 houses</div>
+						<div style="margin-bottom: 8px;">With HOTEL SQUARE FEET<span id="deed-rent5">900</span>.</div>
+						<div>Mortgage Value SQUARE FEET<span id="deed-mortgage">80</span>.</div>
+						<div>Houses cost SQUARE FEET<span id="deed-houseprice">100</span>. each</div>
+						<div>Hotels, SQUARE FEET<span id="deed-hotelprice">100</span>. plus 4 houses</div>
 						<div style="font-size: 9px; font-style: italic; margin-top: 5px;">If a player owns ALL the Lots of any Color-Group, the rent is Doubled on Unimproved Lots in that group.</div>
 					</td>
 				</tr>
@@ -89,7 +89,7 @@
 			<div id="deed-mortgaged-name"></div>
 			<p>&bull;</p>
 			<div>MORTGAGED</div>
-			<div> for $<span id="deed-mortgaged-mortgage">80</span></div>
+			<div> for SQUARE FEET<span id="deed-mortgaged-mortgage">80</span></div>
 			<p>&bull;</p>
 			<div style="font-style: italic; font-size: 13px; margin: 10px;">Card must be turned this side up if property is mortgaged</div>
 		</div>
@@ -99,7 +99,7 @@
 			<div id="deed-special-text"></div>
 			<div id="deed-special-footer">
 				Mortgage Value
-				<span style="float: right;">$<span id="deed-special-mortgage">100</span>.</span>
+				<span style="float: right;">SQUARE FEET<span id="deed-special-mortgage">100</span>.</span>
 			</div>
 		</div>
 	</div>
@@ -178,56 +178,56 @@
 					<td class="moneybararrowcell"><img src="images/arrow.png" id="p0arrow" class="money-bar-arrow" alt=">" /></td>
 					<td id="p0moneybar" class="moneybarcell">
 						<div><span id="p0moneyname" >Player 0</span>:</div>
-						<div>$<span id="p0money">1500</span></div>
+						<div><span id="p0money">1500</span> SQUARE FEET</div>
 					</td>
 				</tr>
 				<tr id="moneybarrow1" class="money-bar-row">
 					<td class="moneybararrowcell"><img src="images/arrow.png" id="p1arrow" class="money-bar-arrow" alt=">"/></td>
 					<td id="p1moneybar" class="moneybarcell">
 						<div><span id="p1moneyname" >Player 1</span>:</div>
-						<div>$<span id="p1money">1500</span></div>
+						<div><span id="p1money">1500</span> SQUARE FEET</div>
 					</td>
 				</tr>
 				<tr id="moneybarrow2" class="money-bar-row">
 					<td class="moneybararrowcell"><img src="images/arrow.png" id="p2arrow" class="money-bar-arrow" alt=">" /></td>
 					<td id="p2moneybar" class="moneybarcell">
 						<div><span id="p2moneyname" >Player 2</span>:</div>
-						<div>$<span id="p2money">1500</span></div>
+						<div><span id="p2money">1500</span> SQUARE FEET</div>
 					</td>
 				</tr>
 				<tr id="moneybarrow3" class="money-bar-row">
 					<td class="moneybararrowcell"><img src="images/arrow.png" id="p3arrow" class="money-bar-arrow" alt=">" /></td>
 					<td id="p3moneybar" class="moneybarcell">
 						<div><span id="p3moneyname" >Player 3</span>:</div>
-						<div>$<span id="p3money">1500</span></div>
+						<div><span id="p3money">1500</span> SQUARE FEET</div>
 					</td>
 				</tr>
 				<tr id="moneybarrow4" class="money-bar-row">
 					<td class="moneybararrowcell"><img src="images/arrow.png" id="p4arrow" class="money-bar-arrow" alt=">" /></td>
 					<td id="p4moneybar" class="moneybarcell">
 						<div><span id="p4moneyname" >Player 4</span>:</div>
-						<div>$<span id="p4money">1500</span></div>
+						<div><span id="p4money">1500</span> SQUARE FEET</div>
 					</td>
 				</tr>
 				<tr id="moneybarrow5" class="money-bar-row">
 					<td class="moneybararrowcell"><img src="images/arrow.png" id="p5arrow" class="money-bar-arrow" alt=">" /></td>
 					<td id="p5moneybar" class="moneybarcell">
 						<div><span id="p5moneyname" >Player 5</span>:</div>
-						<div>$<span id="p5money">1500</span></div>
+						<div><span id="p5money">1500</span> SQUARE FEET</div>
 					</td>
 				</tr>
 				<tr id="moneybarrow6" class="money-bar-row">
 					<td class="moneybararrowcell"><img src="images/arrow.png" id="p6arrow" class="money-bar-arrow" alt=">" /></td>
 					<td id="p6moneybar" class="moneybarcell">
 						<div><span id="p6moneyname" >Player 6</span>:</div>
-						<div>$<span id="p6money">1500</span></div>
+						<div><span id="p6money">1500</span> SQUARE FEET</div>
 					</td>
 				</tr>
 				<tr id="moneybarrow7" class="money-bar-row">
 					<td class="moneybararrowcell"><img src="images/arrow.png" id="p7arrow" class="money-bar-arrow" alt=">" /></td>
 					<td id="p7moneybar" class="moneybarcell">
 						<div><span id="p7moneyname" >Player 7</span>:</div>
-						<div>$<span id="p7money">1500</span></div>
+						<div><span id="p7money">1500</span> SQUARE FEET</div>
 					</td>
 				</tr>
 				<tr id="moneybarrow8">
@@ -242,7 +242,7 @@
 
 	<div id="setup">
 		<div style="margin-bottom: 20px;">
-			Select number of players ROBBIE23.
+			Select number of players.
 			<select id="playernumber" title="Select the number of players for the game.">
 				<option>2</option>
 				<option>3</option>
@@ -305,7 +305,7 @@
 				<td style="vertical-align: top; border: none;">
 					<div id="quickstats" style="">
 							<div><span id="pname" >Player 1</span>:</div>
-							<div><span id="pmoney">$1500</span></div>
+							<div><span id="pmoney">1500 SQUARE FEET</span></div>
 					</div>
 					<div>
 						<div id="die0" title="Die" class="die die-no-img"></div>
@@ -336,10 +336,10 @@
 			</tr>
 			<tr>
 				<td class="trade-cell">
-					$&nbsp;<input id="trade-leftp-money" value="0" title="Enter amount to exchange with the other player." />
+					SQUARE FEET&nbsp;<input id="trade-leftp-money" value="0" title="Enter amount to exchange with the other player." />
 				</td>
 				<td class="trade-cell">
-					$&nbsp;<input id="trade-rightp-money" value="0" title="Enter amount to exchange with the other player." />
+					SQUARE FEET&nbsp;<input id="trade-rightp-money" value="0" title="Enter amount to exchange with the other player." />
 				</td>
 			</tr>
 			<tr>
